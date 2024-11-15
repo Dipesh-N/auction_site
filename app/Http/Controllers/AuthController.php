@@ -39,7 +39,7 @@ class AuthController extends Controller
         ]);
 
         if (auth()->attempt(['username' => $request->username, 'password' => $request->password])) {
-            return redirect()->route('layout2');
+            return redirect()->route('firstpage');
         }
         else
         {
